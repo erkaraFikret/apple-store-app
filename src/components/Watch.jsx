@@ -27,9 +27,11 @@ const Watch = () => {
                             {watch.price}
                         </a>
                         <div className='md:text-sm text-xs text-gray-700 my-2'>
-                            <span className='block'>{watch.desc[0]}</span>
-                            <span className='block'>{watch.desc[1]}</span>
-                            <span className='block'>{watch.desc[2]}</span>
+                            {watch.desc.map((line, key) => (
+                                <span key={key} className='block'>{line}</span>
+                            ))}
+                            
+                            
                         </div>
                         <button className='w-min text-sm mt-4 py-1 px-2 bg-blue-400 rounded-full text-white'>
                             Shop

@@ -108,7 +108,7 @@ export const watchModels = [
   },
 ]
 
-export const imacModels = [
+export const iMacModels = [
   {
     label: 'Green',
     bg: '#10505b',

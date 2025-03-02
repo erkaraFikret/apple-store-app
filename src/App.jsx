@@ -5,6 +5,7 @@ import Home from "./components/Home"
 import IPhone from "./components/IPhone"
 import MacBook from "./components/MacBook"
 import Watch from "./components/Watch"
+import Imac from "./components/Imac"
 
 const App = () => {
   const [frameZoom, setFrameZoom] = useState(false)
@@ -29,7 +30,8 @@ const App = () => {
           {/* <Home /> */}
           {/* <IPhone /> */}
           {/* <MacBook /> */}
-          <Watch/>
+          {/* <Watch/> */}
+          <Imac/>
         </div>
 
       </div>
