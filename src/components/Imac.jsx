@@ -34,7 +34,10 @@ const Imac = () => {
                                 setSelectorColor(model.label.toLowerCase())
                                 setVisibleLabel(model.label)
                             }} />
-                        <span className='text-sm'>{model.label}</span>
+                        {visibleLabel === model.label && (
+                            <span className="text-sm">{model.label}</span>
+                        )}
+
                     </div>
                 ))}
 
